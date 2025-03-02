@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import search from "../assets/search.svg";
 import avtar from "../assets/avatar.svg";
 import { images } from "../assets/assets";
@@ -9,9 +9,11 @@ const NavBar = () => {
 
   return (
     <div className="flex items-center justify-between py-5 font-medium">
-      <h2 className="text-2xl hover:subpixel-antialiased uppercase">
-        Shopeeee Logo ;)
-      </h2>
+      <Link to="/">
+        <h2 className="text-2xl hover:subpixel-antialiased uppercase">
+          Shopeeee Logo ;)
+        </h2>
+      </Link>
 
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
         <NavLink to="/" className="flex flex-col items-center gap-1">
